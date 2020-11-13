@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root{
+    max-width: 1100px;
+    margin: auto;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: green;
+   
+}
+.header {
+    display: flex;
+    width: auto;
+    padding: 30px 40px;
+    
+}
+header a img{
+    
+    width: 8rem;
+}
+.flex{
+    display: flex;
+    flex: 1;
+}
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 2;
+    margin-left: 100px;
+}
+.nav1 a{
+   
+    font-size: 1.0625rem;
+    color: white;
+    text-decoration: none;
+    font-family:"lato";
+}
+.nav1 a:hover{
+    color:#EFC94C ;
+}
+#button{
+    padding: 10px 20px;
+    border: 2px solid white;
+}
+#button:hover{
+    background-color: white;
+    color: inherit;
+    transition: 1s;
+}
+.social-media{
+    display: flex;
+    flex: 0.5;
+}
+.social-media a {
+    position: relative;
+    top: 15px;
+   margin-right: 10px;
+}
+.svg{
+    width: 30px;
+background-color: white;
+}
+.maincont{
+    padding: 200px 40px;
+}
+.maincont h1{
+    font-family: "bebas neue";
+    font-size: 130px;
+    color: white;
+    margin: 0;
+}
+.maincont h2{
+    font-family: "bebas neue";
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+}
+.date{
+    display: flex;
+}
+.date p{
+    font-family: "bebas neue";
+    font-size: 2.5rem;
+    margin: 0;
+    color: white;
+}
+.date p:last-child{
+    color: #EFC94C;
+}
+.mainbutton{
+    width: 300px;
+    display: flex;
+    padding-top: 53px;
+    justify-content: space-between;
+    
+}
+.mainbutton a{
+    font-size: 1.0625rem;
+    font: bold;
+    display: flex;
+    background-color:  #EFC94C;
+    font-family: lato;
+    color: #15272E;
+    height: 56px;
+    width: 131px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.mainbutton a:last-child{
+    background-color: white;
+    width: 146px;
+}
+.mainbutton a:hover{
+    background-color: #CB4E3A;
+    transition: 1s;
+}
+@media (max-width: 1020px) {
+    .flex{
+        flex-direction: column;
+    }
+    .social-media{
+        justify-content: flex-end;
+    }
+    
+}
+@media (max-width: 890px) {
+    .flex{
+        display: none;
+    }
+}
+@media (max-width: 890px){
+    .maincont{
+        padding: 130px 24px;
+    }
+    .maincont h1{
+        font-size: 4rem;
+    }
+    .maincont h2, .date p{
+        font-size: 2.125rem;
+    }
+
+}
+@media (max-width: 345px){
+    .mainbutton{
+        display: block;
+    }
+    .mainbutton a:last-child{
+        margin-top: 20px;
+    }
+}
